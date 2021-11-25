@@ -1,0 +1,177 @@
+/* header */ 
+@import  "componentes/header";
+
+
+/*  fuentes y colores */ 
+@import "componentes/color-font";
+
+/* footer */
+@import "componentes/footer";
+
+/* responsive*/
+@import "componentes/medias";
+
+
+*{margin: 0;
+    padding: 0;}
+
+    
+   /* index*/
+
+    .home {
+        background-image: url(../src/multimedia/images/bg-home.png);
+        width: 100%;
+        padding-top: 15%  ;
+        
+        background-size: 100%;  
+       
+        button{
+           @extend %boton; 
+            margin: 20px 0 20px 16%; 
+            a {
+                text-decoration: none;
+                color: $negro;
+                
+            }
+            &:hover{
+                @extend %botont;
+                
+            }
+            
+        }
+        p { 
+            font-size: 20px;
+            color: $negro;
+            margin-left: 16%;
+            font-family: 'Raleway', sans-serif;}
+        
+     }
+     
+      
+     
+       
+     
+
+      /* sobre mi */
+
+    .sobremi {
+        background-image: url(../src/multimedia/images/bg-home.png);
+        width: 100%;
+        height: auto;
+        background-size: 100%; 
+        padding-top: 15%;
+
+        p { 
+            font-size: 20px;
+            color: $negro; 
+            font-family: 'Raleway', sans-serif;
+        
+        }
+     } 
+    
+     /*   Experiencia */ 
+    .experiencia {
+        background-image: url(../src/multimedia/images/bg-experiencia.png);
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+        text-align: center;
+        padding-top: 150px;
+        p {
+            font-size: 20px;
+            color: $negro; 
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .portada-ex{
+            width: 100%;
+        } 
+
+        h4 {
+            font-size: 28px;
+            color: $negro; 
+            font-family: 'Raleway', sans-serif;
+        }
+
+    }
+    
+     
+    
+    .contenedor-exp{
+        display: flex;
+        justify-content: space-around;
+    
+        div{
+            padding: 40px;
+        
+        
+    } 
+    }
+    
+    /*   Trabajos */ 
+
+    .trabajo{
+        background-image: url(../src/multimedia/images/bg-trabajos.png); 
+        height: auto;
+        background-size: 100%;
+        text-align: center;
+      padding-top:150px;
+       padding-bottom:50px ;
+        margin: auto; 
+        .tr-descripcion{
+            background-color: $amarillo;
+            color: #1d1d1b; 
+            padding: 40px;
+            p {
+                font-size: 20px;
+                color: #1d1d1b; 
+                font-family: 'Raleway', sans-serif;
+            }
+            h3 {
+                font-size: 30px;
+                color: #1d1d1b; 
+                font-family: 'Raleway', sans-serif;
+            }
+            button{
+                @extend %boton2;
+
+                &:hover{
+                    @extend %boton2t;}
+                
+            }
+            
+    
+    }
+
+  }
+      
+  
+
+ /*   Contacto */ 
+.contacto {
+    background-image: url(../src/multimedia/images/bg-contacto.jpg);
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+    text-align: center;
+   padding-top: 150px;
+
+    button{
+        @extend %boton2;
+        &:hover{
+            @extend %boton2t;}
+
+    }
+    .img-contacto{
+        height: 550px;
+        width: auto;
+    }
+    .formulario-c{
+        padding: 80px 0 ;
+        text-align: center;
+    }
+      
+    
+}
+ 
+

@@ -1,0 +1,30 @@
+ /*   Animacion botones */ 
+
+%boton {
+    background-color: $amarillo;
+    color: $negro;
+    padding: 10px 20px ; 
+    border: 1px solid transparent;
+    border-radius: 10px; 
+}
+
+%boton2 {
+    background-color: #ffffff;
+    color: $negro;
+    padding: 10px 20px ; 
+    border: 1px solid transparent;
+    border-radius: 10px; 
+}
+
+%botont{
+    
+transition: all 1s ease-out;
+background: lighten($amarillo, 10%)
+}
+
+%boton2t{ 
+    transition: all 1s ease-out;
+    background: darken(#ffffff, 20%)
+    }
+
+   

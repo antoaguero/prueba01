@@ -1,0 +1,48 @@
+
+/* responsive*/
+@media (max-width:480px){
+
+    footer{
+        p{ visibility: hidden;}
+    }
+    /* home*/
+    .home 
+    {img{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15%;
+        width: 100%;
+         
+     }
+    .perfil{
+        visibility: hidden;
+        display: none;
+    }}
+
+/* contacto*/
+.contacto {
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+@media (max-width:770px){
+    footer{
+        p{ visibility: hidden;}
+    }
+
+
+     /* contacto*/
+.contacto {
+    padding: 0 20px;
+}
+}

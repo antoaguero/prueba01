@@ -1,0 +1,371 @@
+/* header */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
+/*   Animacion botones */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
+.home button {
+  background-color: #fdc83e;
+  color: #1d1d1b;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.contacto button, .trabajo .tr-descripcion button {
+  background-color: #ffffff;
+  color: #1d1d1b;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.home button:hover {
+  transition: all 1s ease-out;
+  background: #fed670;
+}
+
+.contacto button:hover, .trabajo .tr-descripcion button:hover {
+  transition: all 1s ease-out;
+  background: #cccccc;
+}
+
+/*   Header*/
+header {
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  height: 15%;
+  z-index: 0;
+}
+header ul {
+  text-align: center;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+}
+header ul li {
+  list-style: none;
+  padding: 0 40px;
+  text-align: center;
+}
+header ul li a {
+  font-size: 24px;
+  color: #1d1d1b;
+  text-decoration: none;
+  padding: 0px;
+  list-style: none;
+  position: relative;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+/*  Animacion Nav */
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  margin-right: 70px;
+}
+.menu a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  color: #1d1d1b;
+}
+.menu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  border-top: 2px solid #1d1d1b;
+  border-left: 2px solid #1d1d1b;
+  background: #fdc83e;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  color: #1d1d1b;
+}
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+.menu[data-animation=to-left] a::before {
+  transform-origin: right;
+}
+
+.menu[data-animation=center] a::before {
+  transform-origin: center;
+}
+
+.menu[data-animation=bonus] a::before {
+  transform-origin: right;
+}
+
+.menu[data-animation=bonus] a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+.btn-desplegable {
+  font-size: 24px;
+  color: #1d1d1b;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  background-color: #ffffff;
+}
+.btn-desplegable:hover {
+  transition: all 0.7s ease-in-out;
+  border-bottom: 6px solid #fdc83e;
+  padding: 10px;
+}
+
+.pagselecc {
+  background-color: #fdc83e;
+  color: #1d1d1b;
+  border-radius: 10px 10px 0 0;
+}
+
+/*  fuentes y colores */
+/* footer */
+/*   footer */
+/*   Animacion botones */
+.home button {
+  background-color: #fdc83e;
+  color: #1d1d1b;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.contacto button, .trabajo .tr-descripcion button {
+  background-color: #ffffff;
+  color: #1d1d1b;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.home button:hover {
+  transition: all 1s ease-out;
+  background: #fed670;
+}
+
+.contacto button:hover, .trabajo .tr-descripcion button:hover {
+  transition: all 1s ease-out;
+  background: #cccccc;
+}
+
+footer {
+  background-color: #fdc83e;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10%;
+}
+footer ul li {
+  text-align: center;
+  padding: 0 40px;
+}
+footer ul li a {
+  color: #1d1d1b;
+}
+footer ul li a img {
+  opacity: 0.6;
+  width: 40px;
+}
+footer ul li a img:hover {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+footer ul li a p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1d1d1b;
+  padding: 5px;
+}
+footer ul .ubicacion {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+footer ul .persona {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+footer ul .persona a {
+  text-decoration: none;
+  color: #1d1d1b;
+}
+
+/* responsive*/
+/* responsive*/
+@media (max-width: 480px) {
+  footer p {
+    visibility: hidden;
+  }
+
+  /* home*/
+  .home img {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15%;
+    width: 100%;
+  }
+  .home .perfil {
+    visibility: hidden;
+    display: none;
+  }
+
+  /* contacto*/
+  .contacto {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 770px) {
+  footer p {
+    visibility: hidden;
+  }
+
+  /* contacto*/
+  .contacto {
+    padding: 0 20px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* index*/
+.home {
+  background-image: url(../src/multimedia/images/bg-home.png);
+  width: 100%;
+  padding-top: 15%;
+  background-size: 100%;
+}
+.home button {
+  margin: 20px 0 20px 16%;
+}
+.home button a {
+  text-decoration: none;
+  color: #1d1d1b;
+}
+.home p {
+  font-size: 20px;
+  color: #1d1d1b;
+  margin-left: 16%;
+  font-family: "Raleway", sans-serif;
+}
+
+/* sobre mi */
+.sobremi {
+  background-image: url(../src/multimedia/images/bg-home.png);
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  padding-top: 15%;
+}
+.sobremi p {
+  font-size: 20px;
+  color: #1d1d1b;
+  font-family: "Raleway", sans-serif;
+}
+
+/*   Experiencia */
+.experiencia {
+  background-image: url(../src/multimedia/images/bg-experiencia.png);
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  text-align: center;
+  padding-top: 150px;
+}
+.experiencia p {
+  font-size: 20px;
+  color: #1d1d1b;
+  font-family: "Raleway", sans-serif;
+}
+.experiencia .portada-ex {
+  width: 100%;
+}
+.experiencia h4 {
+  font-size: 28px;
+  color: #1d1d1b;
+  font-family: "Raleway", sans-serif;
+}
+
+.contenedor-exp {
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor-exp div {
+  padding: 40px;
+}
+
+/*   Trabajos */
+.trabajo {
+  background-image: url(../src/multimedia/images/bg-trabajos.png);
+  height: auto;
+  background-size: 100%;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+.trabajo .tr-descripcion {
+  background-color: #fdc83e;
+  color: #1d1d1b;
+  padding: 40px;
+}
+.trabajo .tr-descripcion p {
+  font-size: 20px;
+  color: #1d1d1b;
+  font-family: "Raleway", sans-serif;
+}
+.trabajo .tr-descripcion h3 {
+  font-size: 30px;
+  color: #1d1d1b;
+  font-family: "Raleway", sans-serif;
+}
+/*   Contacto */
+.contacto {
+  background-image: url(../src/multimedia/images/bg-contacto.jpg);
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  text-align: center;
+  padding-top: 150px;
+}
+.contacto .img-contacto {
+  height: 550px;
+  width: auto;
+}
+.contacto .formulario-c {
+  padding: 80px 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

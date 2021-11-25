@@ -1,0 +1,53 @@
+/*   footer */
+@import "color-font";
+@import "estilos-definidos";
+
+footer {
+  background-color: $amarillo;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10%;
+  ul {
+    li{text-align: center;
+        padding: 0 40px;
+        a{
+            color: $negro;
+            img {
+              opacity: 0.6;
+              width: 40px;
+              &:hover {
+                transition: all 0.5s ease-out;
+                opacity: 1;
+              }
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          color: $negro;
+          padding: 5px;
+
+        }
+    }
+    
+  } 
+  .ubicacion {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+  }
+  .persona {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    a {
+      text-decoration: none;
+      color: $negro;
+    }
+  }
+   
+  }}
